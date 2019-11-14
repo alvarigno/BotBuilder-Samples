@@ -35,6 +35,11 @@ The example shows the use of the `botbuilder-js` SDKs for the browser using the 
     ```bash
     npm start
     ```
+- clean-webpack-plugin
+    ```bash
+    npm i clean-webpack-plugin
+    ```
+
 
 - Launch a web browser and navigate to [http://localhost:8080](http://localhost:8080).
 
