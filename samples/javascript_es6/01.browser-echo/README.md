@@ -39,7 +39,10 @@ The example shows the use of the `botbuilder-js` SDKs for the browser using the 
     ```bash
     npm i clean-webpack-plugin
     ```
-
+- copy-webpack-plugin
+    ```bash
+    npm i copy-webpack-plugin
+    ```
 
 - Launch a web browser and navigate to [http://localhost:8080](http://localhost:8080).
 
