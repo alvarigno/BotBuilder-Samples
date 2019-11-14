@@ -51,7 +51,35 @@ The example shows the use of the `botbuilder-js` SDKs for the browser using the 
     ```bash
     npm i @babel/core
     ```
+- @babel/plugin-proposal-class-properties
+    ```bash
+    npm i @babel/plugin-proposal-class-properties
+    ```
 
+- @babel/preset-env
+    ```bash
+    npm i @babel/preset-env
+    ```
+
+- @babel/preset-typescript
+    ```bash
+    npm i @babel/preset-typescript
+    ```
+
+- botbuilder-core
+    ```bash
+    npm i botbuilder-core
+    ```
+
+- botframework-directlinejs
+    ```bash
+    npm i botframework-directlinejs
+    ```
+
+- botframework-webchat
+    ```bash
+    npm i botframework-webchat
+    ```
 
 - Launch a web browser and navigate to [http://localhost:8080](http://localhost:8080).
 
