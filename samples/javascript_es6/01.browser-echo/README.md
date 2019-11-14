@@ -47,6 +47,11 @@ The example shows the use of the `botbuilder-js` SDKs for the browser using the 
     ```bash
     npm i babel-loader
     ```
+- @babel/core
+    ```bash
+    npm i @babel/core
+    ```
+
 
 - Launch a web browser and navigate to [http://localhost:8080](http://localhost:8080).
 
