@@ -1,0 +1,16 @@
+{
+    "name": "Testbot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "endpoint": "https://127.0.0.1:8080/api/messages",
+            "name": "tets",
+            "id": "178"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "path": "/Users/alvaroemparan/Documents/GitHub/BotBuilder-Samples/samples/csharp_webapi/Testbot.bot",
+    "overrides": null
+}

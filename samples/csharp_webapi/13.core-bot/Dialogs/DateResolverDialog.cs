@@ -31,7 +31,7 @@ namespace Microsoft.BotBuilderSamples.Dialogs
         {
             var timex = (string)stepContext.Options;
 
-            var messageText = "When would you like to travel?";
+            var messageText = "When would you like to viaje?";
             var promptMessage = MessageFactory.Text(messageText, messageText, InputHints.ExpectingInput);
 
             var repromptMessageText = "I'm sorry, to make your booking please enter a full travel date including Day Month and Year.";
