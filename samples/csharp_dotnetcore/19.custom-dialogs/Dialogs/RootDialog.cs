@@ -28,7 +28,7 @@ namespace Microsoft.BotBuilderSamples
             // In this example we will want two text prompts to run, one for the first name and one for the last.
             var fullname_slots = new List<SlotDetails>
             {
-                new SlotDetails("first", "text", "Please enter your first name."),
+                new SlotDetails("first", "text", "Please ingrese your first name."),
                 new SlotDetails("last", "text", "Please enter your last name."),
             };
 
