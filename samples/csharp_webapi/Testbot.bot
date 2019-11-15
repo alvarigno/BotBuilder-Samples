@@ -4,9 +4,9 @@
     "services": [
         {
             "type": "endpoint",
-            "endpoint": "http://localhost:3978/api/messages",
-            "name": "testnetcore",
-            "id": "43"
+            "endpoint": "http://localhost:5000/api/messages",
+            "name": "test",
+            "id": "60"
         }
     ],
     "padlock": "",
