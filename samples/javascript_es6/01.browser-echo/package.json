@@ -13,23 +13,22 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.1.5",
-        "botbuilder-core": "^4.5.1",
-        "botframework-directlinejs": "~0.11.2",
-        "botframework-webchat": "4.5.0",
-        "core-js": "^3.0.1"
+        "botbuilder-core": "^4.6.1",
+        "botframework-directlinejs": "^0.11.6",
+        "botframework-webchat": "^4.5.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.5.0",
-        "@babel/core": "^7.5.4",
-        "@babel/plugin-proposal-class-properties": "^7.5.0",
-        "@babel/preset-env": "^7.5.4",
-        "@babel/preset-typescript": "^7.3.3",
+        "@babel/core": "^7.7.2",
+        "@babel/plugin-proposal-class-properties": "^7.7.0",
+        "@babel/preset-env": "^7.7.1",
+        "@babel/preset-typescript": "^7.7.2",
         "@babel/runtime": "^7.5.4",
         "babel-loader": "^8.0.6",
         "clean-webpack-plugin": "^3.0.0",
-        "copy-webpack-plugin": "^5.0.3",
-        "core-js": "^3.1.4",
-        "css-loader": "^3.0.0",
+        "copy-webpack-plugin": "^5.0.5",
+        "core-js": "^3.4.1",
+        "css-loader": "^3.2.0",
         "eslint": "^6.0.1",
         "eslint-config-standard": "^13.0.1",
         "eslint-plugin-import": "^2.18.0",
@@ -38,8 +37,8 @@
         "eslint-plugin-standard": "^4.0.0",
         "regenerator-runtime": "^0.13.2",
         "style-loader": "^0.23.1",
-        "webpack": "^4.35.3",
-        "webpack-cli": "^3.3.6",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10",
         "webpack-dev-server": "^3.7.2"
     }
 }
