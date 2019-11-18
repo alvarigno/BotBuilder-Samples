@@ -33,12 +33,33 @@ const countProperty = conversationState.createProperty('turnCounter');
 // Register the business logic of the bot through the WebChatAdapter's processActivity implementation.
 webChatAdapter.processActivity(async turnContext => {
     // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
+    
+    console.log(turnContext.activity.text);
+    var mensaje = turnContext.activity.text;
+
+
     if (turnContext.activity.type === ActivityTypes.Message) {
         // Read from state.
         let count = await countProperty.get(turnContext);
         count = count === undefined ? 1 : count;
+
+
+        if (mensaje.indexOf('hola') >= 0){
+
+            mensaje = 'Hola Cómo estás?';
+
+        }else {
+
+            mensaje=" mensaje: " +turnContext.activity.text
+        }
+
         await turnContext.sendActivity(
-            `${ count }: You said "${ turnContext.activity.text }"`
+
+
+            //`${ count }: You said "${ turnContext.activity.text }"`
+            `${ count }: Hola, Cómo estás?`
+            
+
         );
         // Increment and set turn counter.
         await countProperty.set(turnContext, ++count);
