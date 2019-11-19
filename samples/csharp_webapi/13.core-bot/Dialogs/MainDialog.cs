@@ -65,9 +65,10 @@ namespace Microsoft.BotBuilderSamples.Dialogs
 
             // Call LUIS and gather any potential booking details. (Note the TurnContext has the response to the prompt.)
             var luisResult = await _luisRecognizer.RecognizeAsync<FlightBooking>(stepContext.Context, cancellationToken);
+            var  uno = "";
             switch (luisResult.TopIntent().intent)
             {
-                case FlightBooking.Intent.BookFlight:
+                case FlightBooking.Intent.Consultar:
                     await ShowWarningForUnsupportedCities(stepContext.Context, luisResult, cancellationToken);
 
                     // Initialize BookingDetails with any entities we may have found in the response.
@@ -82,12 +83,20 @@ namespace Microsoft.BotBuilderSamples.Dialogs
                     // Run the BookingDialog giving it whatever details we have from the LUIS call, it will fill out the remainder.
                     return await stepContext.BeginDialogAsync(nameof(BookingDialog), bookingDetails, cancellationToken);
 
-                case FlightBooking.Intent.GetWeather:
+                case FlightBooking.Intent.Buscar:
                     // We haven't implemented the GetWeatherDialog so we just display a TODO message.
                     var getWeatherMessageText = "TODO: get weather flow here";
                     var getWeatherMessage = MessageFactory.Text(getWeatherMessageText, getWeatherMessageText, InputHints.IgnoringInput);
                     await stepContext.Context.SendActivityAsync(getWeatherMessage, cancellationToken);
                     break;
+
+                case FlightBooking.Intent.Ayudar:
+                    // We haven't implemented the GetWeatherDialog so we just display a TODO message.
+                    var getWeatherMessageText2 = "TODO: get weather flow here";
+                    var getWeatherMessage2 = MessageFactory.Text(getWeatherMessageText2, getWeatherMessageText2, InputHints.IgnoringInput);
+                    await stepContext.Context.SendActivityAsync(getWeatherMessage2, cancellationToken);
+                    break;
+
 
                 default:
                     // Catch all for unhandled intents
